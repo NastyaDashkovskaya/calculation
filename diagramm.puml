@@ -1,0 +1,115 @@
+@startuml
+class userinterface.userinterface.GetEmployee {
++ void startElement(String,String,String,Attributes)
+}
+class userinterface.userinterface.Main {
++ void start(Stage)
++ {static} void main(String[])
+}
+class userinterface.userinterface.ListOfEmployees {
++ {static} ArrayList<Employee> employees
++ {static} void listofemplyees()
+}
+class userinterface.userinterface.AddController {
+~ TextField name
+~ TextField surname
+~ TextField patronymic
+~ TextField id
+~ TextField job
+~ TextField koficient
+~ Stage stage
++ void start(Stage)
++ void getEmployee()
++ void showWindowAdd()
+}
+class userinterface.userinterface.MainAppController {
+~ Stage stage
++ void start(Stage)
++ void changeWindowCount()
++ void changeWindowList()
++ void mainAppController()
+}
+class userinterface.userinterface.Employee {
+- int id
+- String name
+- String job
+- double kofisient
+- double premia
++ int getId()
++ void setId(int)
++ String getName()
++ void setName(String)
++ String getJob()
++ void setJob(String)
++ double getPremia()
++ void setPremia(double)
++ double countPremia()
+}
+class userinterface.userinterface.MainController {
++ void initialize(URL,ResourceBundle)
++ void check(ActionEvent)
+}
+class userinterface.userinterface.CheckPassword {
++ PasswordField passw
+~ int mylogin
+~ int mypassword
+~ TextField login
+~ Stage stage
++ void start(Stage)
++ void getPerson(ActionEvent)
++ void showWindowCheck()
+}
+class userinterface.userinterface.ListEmployeeController {
+- ObservableList<Employee> users
+- TableView<Employee> tableUsers
+- TableColumn<Employee,Integer> id
+- TableColumn<Employee,String> name
+- TableColumn<Employee,String> job
+~ Stage stage
+- void initialize()
+- void initData()
++ void start(Stage)
++ void showWindowListEmployee()
++ void changeWindowAdd()
++ void deliteEmployee(ActionEvent)
++ void changeWindowStatistic()
+}
+class userinterface.userinterface.Statistics {
++ Label lable
++ Label lablewors
+~ Stage stage
++ void start(Stage)
++ void best_employee()
++ void wors_employee()
++ void showWindowStatistic()
+}
+class userinterface.userinterface.AddEmployee {
++ {static} void add(int,String,String,double)
+}
+class userinterface.userinterface.Controller {
+- ObservableList<Employee> usersData
+- TableView<Employee> tableUsers
+- TableColumn<Employee,Integer> idColumn
+- TableColumn<Employee,String> nameColumn
+- TableColumn<Employee,String> jobColumn
+- TableColumn<Employee,String> premiaColumn
+~ Stage stage
+- void initialize()
+- void initData()
++ void showMessage()
++ void count()
++ void start(Stage)
++ void showWindowCount()
+}
+
+
+org.xml.sax.helpers.DefaultHandler <|-- userinterface.userinterface.GetEmployee
+javafx.application.Application <|-- userinterface.userinterface.Main
+javafx.application.Application <|-- userinterface.userinterface.AddController
+javafx.application.Application <|-- userinterface.userinterface.MainAppController
+javafx.fxml.Initializable <|.. userinterface.userinterface.MainController
+javafx.application.Application <|-- userinterface.userinterface.CheckPassword
+javafx.application.Application <|-- userinterface.userinterface.ListEmployeeController
+javafx.application.Application <|-- userinterface.userinterface.Statistics
+javafx.application.Application <|-- userinterface.userinterface.Controller
+@enduml

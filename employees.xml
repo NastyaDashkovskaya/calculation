@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><employees>
+    <employee id="12" job="кассир" kofisient="0.2" name="Дубей Дарья Дмитриевна"/>
+    <employee id="53" job="медсестра" kofisient="1.3" name="Заинчковская Дарья Александровна"/>
+    <employee id="20" job="врач" kofisient="1.5" name="Зимина Ольга Николаевна"/>
+    <employee id="67" job="врач" kofisient="1.1" name="Кузнецова Анастасия Витальевна"/>
+    <employee id="59" job="врач" kofisient="1.2" name="Анастасия Дашковская Андреевна"/>
+    <employee id="87" job="дворник" kofisient="1.2" name="Бондарев Даниил Дмитриевич"/>
+    <employee id="22" job="главврач" kofisient="1.7" name="Елена Ковалева Александровна"/>
+    <employee id="98" job="врач" kofisient="1.5" name="Липицкая Анна Викторовна"/>
+    
+    
+</employees>

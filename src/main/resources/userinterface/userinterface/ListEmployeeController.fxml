@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="411.0" prefWidth="624.0" style="-fx-background-color: #87CEEB;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.userinterface.ListEmployeeController">
+   <children>
+      <TableView fx:id="tableUsers" layoutX="54.0" layoutY="45.0" prefHeight="309.0" prefWidth="531.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" style="-fx-background-color: #B0E0E6; -fx-border-color: #00008b;" text="№" />
+          <TableColumn fx:id="name" prefWidth="306.20001220703125" style="-fx-background-color: #B0E0E6; -fx-border-color: #00008b;" text="ФИО" />
+            <TableColumn fx:id="job" prefWidth="173.0" style="-fx-background-color: #B0E0E6; -fx-border-color: #00008b;" text="Должность" />
+        </columns>
+      </TableView>
+      <Label layoutX="218.0" layoutY="14.0" prefHeight="28.0" prefWidth="209.0" text="СПИСОК РАБОТНИКОВ" textFill="DARKBLUE" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button layoutX="90.0" layoutY="361.0" mnemonicParsing="false" onAction="#changeWindowAdd" style="-fx-background-color: #4169E1;" text="Добавить" textFill="DARKBLUE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="417.0" layoutY="361.0" mnemonicParsing="false" onAction="#initData" style="-fx-background-color: #4169E1;" text="Обновить" textFill="DARKBLUE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="172.0" layoutY="361.0" mnemonicParsing="false" onAction="#deliteEmployee" style="-fx-background-color: #4169E1;" text="Удалить" textFill="DARKBLUE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="280.0" layoutY="361.0" mnemonicParsing="false" onAction="#changeWindowStatistic" style="-fx-background-color: #4169E1;" text="статистика" textFill="DARKBLUE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+
+   </children>
+</AnchorPane>
